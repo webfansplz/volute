@@ -111,7 +111,7 @@ const taskScheduling = {
     });
     // 创建可读流
     this.outputStream = fs.createReadStream(
-      path.resolve(__dirname, "./assets/output.wav")
+      path.resolve(__dirname, "./assets/output.pcm")
     );
     // this is just to activate the speaker, 2s delay
     this.speaker.write(Buffer.alloc(32000, 10));

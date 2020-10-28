@@ -11,7 +11,7 @@ class XunFeiTTS {
     this.text = text;
     this.onDone = onDone;
     // 转换后的语音文件
-    this.outputFile = resolve(__dirname, "../assets/output.wav");
+    this.outputFile = resolve(__dirname, "../assets/output.pcm");
     // 接口入参
     this.params = {
       host: "tts-api.xfyun.cn",
@@ -60,8 +60,7 @@ class XunFeiTTS {
       },
       // 填充business
       business: {
-        aue: "lame",
-        sfl: 1,
+        aue: "raw",
         auf: "audio/L16;rate=16000",
         vcn: "xiaoyan",
         tte: "UTF8",
@@ -104,5 +103,3 @@ class XunFeiTTS {
 }
 
 module.exports = XunFeiTTS;
-// const ttsService = new XunFeiTTS();
-// ttsService.init();

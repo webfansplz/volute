@@ -200,7 +200,7 @@ const taskScheduling = {
     });
     // 创建可读流
     this.outputStream = fs.createReadStream(
-      path.resolve(__dirname, "./assets/output.wav")
+      path.resolve(__dirname, "./assets/output.pcm")
     );
     // this is just to activate the speaker, 2s delay
     this.speaker.write(Buffer.alloc(32000, 10));
@@ -530,7 +530,7 @@ class XunFeiTTS {
     this.text = text;
     this.onDone = onDone;
     // 转换后的语音文件
-    this.outputFile = resolve(__dirname, "../assets/output.wav");
+    this.outputFile = resolve(__dirname, "../assets/output.pcm");
     // 接口入参
     this.params = {
       host: "tts-api.xfyun.cn",
