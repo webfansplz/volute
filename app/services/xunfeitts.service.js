@@ -6,7 +6,6 @@ const { createAuthParams } = require("../utils/auth");
 
 class XunFeiTTS {
   constructor({ text, onDone }) {
-    super();
     this.ws = null;
     // 要转换的文字
     this.text = text;

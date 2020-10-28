@@ -6,7 +6,6 @@ const { createAuthParams } = require("../utils/auth");
 
 class XunFeiIAT {
   constructor({ onReply }) {
-    super();
     // websocket 连接
     this.ws = null;
     // 返回结果,解析后的消息文字
