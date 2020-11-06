@@ -579,8 +579,7 @@ class XunFeiTTS {
       },
       // 填充business
       business: {
-        aue: "lame",
-        sfl: 1,
+        aue: "raw",
         auf: "audio/L16;rate=16000",
         vcn: "xiaoyan",
         tte: "UTF8",
